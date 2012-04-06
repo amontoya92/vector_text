@@ -56,8 +56,6 @@ void drawGenerativeText ( String txt, float x, float y ) {
     //strokeWeight(1);
     //stroke(0, 75);    
     //drawGrid();
-
-
     // draw characterstodo
     strokeWeight(1);
     stroke(0);
@@ -371,8 +369,13 @@ void drawGenerativeChar ( char c )
   case '~':
     draw_TILDE();
     break;
-    
-   }
+  case '[':
+    draw_SQUAREBRACKETL();
+    break; 
+  case ']':
+    draw_SQUAREBRACKETR();
+    break;  
+  }
 }
 //letters
 void draw_A () {
@@ -382,7 +385,7 @@ void draw_A () {
   rLine( 0, 40, 45, 40 );
   rLine( 45, 72, 45, 12 );
   rLine( 45, 12, 33, 0 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_a () {
@@ -393,8 +396,8 @@ void draw_a () {
   rLine( 12, 72, 33, 72 );
   rLine( 45, 42, 33, 30 );
   rLine( 0, 60, 12, 72 );
-  rLine( 45, 30, 45, 72);
-  translate(spacing, 0);
+  rLine( 45, 30, 45, 72 );
+  translate( spacing, 0 );
 }
 
 void draw_B () {
@@ -403,13 +406,13 @@ void draw_B () {
   rLine( 12, 0, 33, 0 );
   rLine( 0, 72, 0, 0 );
   rLine( 45, 31, 45, 12 );
-  rLine(45, 43, 45, 60);
+  rLine( 45, 43, 45, 60);
   rLine( 0, 37, 35, 37 );
-  rLine(45, 31, 35, 37);
-  rLine(45, 43, 35, 37);
+  rLine( 45, 31, 35, 37);
+  rLine( 45, 43, 35, 37);
   rLine( 0, 72, 33, 72 );
   rLine( 45, 12, 33, 0 );
-  translate(spacing, 0);
+  translate( spacing, 0);
 }
 
 void draw_b () {
@@ -420,9 +423,9 @@ void draw_b () {
   rLine( 0, 59, 0, 42 );
   rLine( 12, 72, 33, 72 );
   rLine( 45, 42, 33, 30 );
-  rLine( 0, 60, 12, 72);
-  rLine( 45, 42, 45, 60);
-  translate(spacing, 0);
+  rLine( 0, 60, 12, 72 );
+  rLine( 45, 42, 45, 60 );
+  translate( spacing, 0 );
 }
 
 void draw_C () {
@@ -433,7 +436,7 @@ void draw_C () {
   rLine( 12, 72, 33, 72 );
   rLine( 45, 12, 33, 0 );
   rLine( 0, 60, 12, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_c () {
@@ -444,7 +447,7 @@ void draw_c () {
   rLine( 12, 72, 33, 72 );
   rLine( 45, 42, 33, 30 );
   rLine( 0, 60, 12, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_D () {
@@ -455,7 +458,7 @@ void draw_D () {
   rLine( 45, 59, 45, 12 );
   rLine( 0, 72, 33, 72 );
   rLine( 45, 12, 33, 0 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_d () {
@@ -465,9 +468,9 @@ void draw_d () {
   rLine( 0, 59, 0, 42 );
   rLine( 12, 72, 33, 72 );
   rLine( 45, 42, 33, 30 );
-  rLine( 0, 60, 12, 72);
-  rLine( 45, 0, 45, 72);
-  translate(spacing, 0);
+  rLine( 0, 60, 12, 72 );
+  rLine( 45, 0, 45, 72 );
+  translate( spacing, 0 );
 }
 
 void draw_E () {
@@ -475,7 +478,7 @@ void draw_E () {
   rLine( 0, 0, 40, 0 );
   rLine( 22, 35, 0, 35 );
   rLine( 0, 72, 40, 72 );
-  translate(spacing-10, 0);
+  translate( spacing-10, 0 );
 }
 
 void draw_e () {
@@ -486,15 +489,15 @@ void draw_e () {
   rLine( 12, 72, 33, 72 );
   rLine( 45, 42, 33, 30 );
   rLine( 0, 60, 12, 72 );
-  rLine( 0, 42, 45, 42);
-  translate(spacing, 0);
+  rLine( 0, 42, 45, 42 );
+  translate( spacing, 0 );
 }
 
 void draw_F () {
   rLine( 0, 72, 0, 0 );
   rLine( 0, 0, 40, 0 );
   rLine( 22, 32, 0, 32 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_f () {
@@ -503,7 +506,7 @@ void draw_f () {
   rLine( 10, 72, 10, 12 );
   rLine( 22, 0, 33, 0 );
   rLine( 22, 32, 0, 32 );
-  translate(spacing-5, 0);
+  translate( spacing-5, 0 );
 }
 
 void draw_G () {
@@ -516,7 +519,7 @@ void draw_G () {
   rLine( 12, 72, 33, 72 );
   rLine( 45, 12, 33, 0 );
   rLine( 0, 60, 12, 72 );
-  translate(spacing+10, 0);
+  translate( spacing+10, 0);
 }
 
 void draw_g () {
@@ -527,11 +530,11 @@ void draw_g () {
   rLine( 12, 72, 33, 72 );
   rLine( 45, 42, 33, 30 );
   rLine( 0, 60, 12, 72 );
-  rLine( 45, 30, 45, 90);
+  rLine( 45, 30, 45, 90 );
   rLine( 0, 90, 12, 102 );
   rLine( 12, 102, 33, 102 );
-  rLine( 45, 90, 33, 102);
-  translate(spacing, 0);
+  rLine( 45, 90, 33, 102 );
+  translate( spacing, 0 );
 }
 
 void draw_H () {
@@ -547,21 +550,21 @@ void draw_h () {
   rLine( 45, 42, 45, 72 ); 
   rLine( 45, 42, 33, 30 );
   rLine( 0, 42, 12, 30 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_I () {
   rLine( 0, 0, 25, 0 );
   rLine( 0, 72, 25, 72 );
   rLine( 13, 72, 13, 0 );
-  translate(spacing-15, 0);
+  translate( spacing-15, 0 );
 }
 
 void draw_i () {
   rLine( 13, 72, 13, 34 );
   fill(0);
   ellipse( 13, 20, 4, 3 );
-  translate(spacing-15, 0);
+  translate( spacing-15, 0 );
 }
 
 void draw_J () {
@@ -569,7 +572,7 @@ void draw_J () {
   rLine( 12, 72, 24, 72 );
   rLine( 24, 72, 24, 0 );
   rLine( 0, 60, 12, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_j () {
@@ -578,34 +581,34 @@ void draw_j () {
   rLine( 0, 78, 12, 90 );
   fill(0);
   ellipse( 24, 20, 4, 3 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_K () {
   rLine( 0, 72, 0, 0 );
   rLine( 36, 0, 0, 36 );
   rLine( 0, 36, 36, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_k () {
   rLine( 0, 72, 0, 0 );
   rLine( 26, 20, 0, 46 );
   rLine( 0, 46, 26, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_L () {
   rLine( 40, 72, 12, 72 );
   rLine( 0, 60, 0, 0 );
   rLine( 0, 60, 12, 72 );
-  translate(spacing-10, 0);
+  translate( spacing-10, 0 );
 }
 
 void draw_l () {
-  translate( -5 , 0 );
+  translate( -5, 0 );
   rLine( 20, 72, 20, 0 );
-  translate(spacing-10, 0);
+  translate( spacing-10, 0 );
 }
 
 void draw_M () {
@@ -613,7 +616,7 @@ void draw_M () {
   rLine( 44, 72, 44, 0 );
   rLine( 0, 0, 22, 72 );
   rLine( 22, 72, 44, 0 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_m () {
@@ -621,26 +624,26 @@ void draw_m () {
   rLine( 24, 42, 36, 30 );
   rLine( 24, 42, 12, 30 );
   rLine( 48, 42, 36, 30 );
-  rLine( 24, 42, 24, 72);
-  rLine( 48, 42, 48, 72);
-  rLine( 0, 30, 0, 72);
-  translate(spacing+5, 0);
+  rLine( 24, 42, 24, 72 );
+  rLine( 48, 42, 48, 72 );
+  rLine( 0, 30, 0, 72 );
+  translate( spacing+5, 0 );
 }
 
 void draw_N () {
   rLine( 0, 72, 0, 0 );
   rLine( 0, 0, 45, 72 );
   rLine( 45, 72, 45, 0 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_n () {
   rLine( 0, 42, 12, 30 );
   rLine( 12, 30, 33, 30 );
   rLine( 45, 42, 33, 30 );
-  rLine( 45, 42, 45, 72);
-  rLine( 0, 30, 0, 72);
-  translate(spacing, 0);
+  rLine( 45, 42, 45, 72 );
+  rLine( 0, 30, 0, 72 );
+  translate( spacing, 0 );
 }
 
 void draw_O () {
@@ -652,7 +655,7 @@ void draw_O () {
   rLine( 12, 72, 33, 72 );
   rLine( 45, 12, 33, 0 );
   rLine( 0, 60, 12, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0);
 }
 
 void draw_o () {
@@ -664,19 +667,19 @@ void draw_o () {
   rLine( 45, 42, 33, 30 );
   rLine( 0, 60, 12, 72 );
   rLine( 45, 42, 45, 59);
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_P () {
-  rLine( 0, 12, 12, 0);
+  rLine( 0, 12, 12, 0 );
   rLine( 0, 72, 0, 0 );
   rLine( 12, 0, 33, 0 );
-  rLine( 45, 12, 33, 0); 
+  rLine( 45, 12, 33, 0 ); 
   rLine( 45, 12, 45, 30 );
   rLine( 45, 30, 33, 42 );
   rLine( 12, 42, 0, 30);
   rLine( 33, 42, 12, 42 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_p () {
@@ -687,9 +690,9 @@ void draw_p () {
   rLine( 0, 59, 0, 42 );
   rLine( 12, 72, 33, 72 );
   rLine( 45, 42, 33, 30 );
-  rLine( 0, 60, 12, 72);
-  rLine( 45, 42, 45, 60);
-  translate(spacing, 0);
+  rLine( 0, 60, 12, 72 );
+  rLine( 45, 42, 45, 60 );
+  translate( spacing, 0 );
 }
 
 void draw_Q () {
@@ -698,7 +701,7 @@ void draw_Q () {
   rLine( 0, 0, 45, 0 );
   rLine( 45, 0, 45, 72 );
   rLine( 40, 61, 50, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_q () {
@@ -709,28 +712,28 @@ void draw_q () {
   rLine( 12, 72, 33, 72 );
   rLine( 45, 42, 33, 30 );
   rLine( 0, 60, 12, 72 );
-  rLine( 45, 30, 45, 100);
-  rLine( 45, 100, 57, 88);
-  translate(spacing+10, 0);
+  rLine( 45, 30, 45, 100 );
+  rLine( 45, 100, 57, 88 );
+  translate( spacing+10, 0 );
 }
 
 void draw_R () {
-  rLine( 0, 72, 0, 0);
-  rLine( 0, 12, 12, 0);
+  rLine( 0, 72, 0, 0 );
+  rLine( 0, 12, 12, 0 );
   rLine( 12, 0, 33, 0 );
-  rLine( 45, 12, 33, 0); 
+  rLine( 45, 12, 33, 0 ); 
   rLine( 45, 12, 45, 30 );
   rLine( 45, 30, 33, 42 );
   rLine( 33, 42, 12, 42 );
   rLine( 0, 30, 42, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_r () {
   rLine( 0, 42, 12, 30 );
   rLine( 12, 30, 33, 30 );
-  rLine( 0, 30, 0, 72);
-  translate(spacing, 0);
+  rLine( 0, 30, 0, 72 );
+  translate( spacing, 0 );
 }
 
 void draw_S () {
@@ -743,7 +746,7 @@ void draw_S () {
   rLine( 45, 42, 45, 60 );//mid ldowstr
   rLine( 45, 60, 33, 72 );//lowldo
   rLine( 33, 72, 0, 72 );//botl
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_s () {
@@ -751,22 +754,22 @@ void draw_s () {
   rLine( 0, 36, 12, 24 );
   rLine( 0, 36, 12, 48 );
   rLine( 12, 48, 33, 48 );//midlacr
-  rLine( 45, 60, 33, 48); //midldow
+  rLine( 45, 60, 33, 48 ); //midldow
   rLine( 45, 60, 33, 72 );//lowldo
   rLine( 33, 72, 0, 72 );//botl
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_T () {
   rLine( 0, 0, 63, 0 );
   rLine( 32, 72, 32, 0 );
-  translate(spacing+20, 0);
+  translate( spacing+20, 0 );
 }
 
 void draw_t () {
   rLine( 0, 25, 44, 25 );
   rLine( 22, 72, 22, 0 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_U () {
@@ -775,7 +778,7 @@ void draw_U () {
   rLine( 45, 59, 45, 5 );
   rLine( 12, 72, 33, 72 );
   rLine( 0, 60, 12, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_u () {
@@ -784,19 +787,19 @@ void draw_u () {
   rLine( 45, 59, 45, 30 );
   rLine( 17, 72, 33, 72 );
   rLine( 5, 60, 17, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_V () {
   rLine( 0, 0, 22, 72 );
   rLine( 22, 72, 44, 0 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_v () {
   rLine( 5, 30, 22, 72 );
   rLine( 22, 72, 39, 30 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_W () {
@@ -804,7 +807,7 @@ void draw_W () {
   rLine( 44, 72, 56, 0 );
   rLine( 6, 72, 27, 12 );
   rLine( 27, 12, 44, 72 );
-  translate(spacing+10, 0);
+  translate( spacing+10, 0 );
 }
 
 void draw_w () {
@@ -812,46 +815,46 @@ void draw_w () {
   rLine( 33, 72, 45, 30 );
   rLine( 12, 72, 22, 38 );
   rLine( 22, 38, 33, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_X () {
   rLine( 0, 72, 43, 0 );
   rLine( 0, 0, 43, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_x () {
   rLine( 5, 72, 40, 25 );
   rLine( 5, 25, 40, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_Y () {
   rLine( 0, 0, 22, 40 );
   rLine( 22, 72, 22, 40 );
   rLine( 22, 40, 44, 0 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_y () {
   rLine( 0, 30, 20, 70 );
   rLine( 0, 100, 44, 30 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_Z () {
   rLine( 0, 5, 45, 5 );
   rLine( 45, 5, 0, 72 );
   rLine( 0, 72, 45, 72 );
-  translate(spacing+10, 0);
+  translate( spacing+10, 0 );
 }
 
 void draw_z () {
   rLine( 0, 27, 45, 27 );
   rLine( 45, 27, 0, 72 );
   rLine( 0, 72, 45, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 // numbers
 void draw_0 () {
@@ -864,13 +867,13 @@ void draw_0 () {
   rLine( 45, 12, 33, 0 );
   rLine( 0, 60, 12, 72 );
   rLine( 6, 66, 39, 6);
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_1 () {
-  rLine(12, 12, 24, 0 );
+  rLine( 12, 12, 24, 0 );
   rLine( 24, 0, 24, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_2 () {
@@ -879,7 +882,7 @@ void draw_2 () {
   rLine( 33, 0, 45, 12 );
   rLine( 45, 12, 0, 72 );
   rLine( 0, 72, 45, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_3 () {
@@ -893,14 +896,14 @@ void draw_3 () {
   rLine( 45, 59, 32, 72 );
   rLine( 32, 72, 12, 72 );
   rLine( 0, 60, 12, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_4 () {
   rLine( 45, 59, 0, 59 );
   rLine( 0, 59, 33, 0 );
   rLine( 33, 0, 33, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_5 () {
@@ -912,7 +915,7 @@ void draw_5 () {
   rLine( 32, 30, 0, 30 ); 
   rLine( 0, 30, 0, 0 );
   rLine( 0, 0, 45, 0 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_6 () {
@@ -924,13 +927,13 @@ void draw_6 () {
   rLine( 0, 60, 12, 72 );
   rLine( 45, 59, 32, 72 );
   rLine( 32, 72, 12, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_7 () {
   rLine( 0, 0, 45, 0 );
   rLine( 45, 0, 0, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_8 () {
@@ -949,7 +952,6 @@ void draw_8 () {
   rLine( 45, 46, 33, 34 );
   rLine( 0, 60, 12, 72 );
   rLine( 45, 46, 45, 59);
-
   /*
   rLine( 45, 30, 0, 45 );
    rLine( 45, 45, 0, 30 );
@@ -964,7 +966,7 @@ void draw_8 () {
    rLine( 45, 12, 33, 0 );
    rLine( 0, 60, 12, 72 );
    */
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_9 () {
@@ -976,7 +978,7 @@ void draw_9 () {
   rLine( 12, 42, 33, 42 );
   rLine( 0, 12, 0, 30 );
   rLine( 45, 30, 3, 72 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 //symbles
 void draw_SPACEBAR() {
@@ -1034,12 +1036,12 @@ void draw_SEMICOLON() {
 void draw_PLUS() {
   rLine( 22, 60, 22, 12 );
   rLine( 0, 37, 44, 37 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_MINUS() {
   rLine( 0, 37, 45, 37 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_QUOTES() {
@@ -1074,29 +1076,31 @@ void draw_CURLYBRACKETSL() {
   translate( +10, 0 );
   rLine( 0, 12, 12, 0 );
   rLine( 12, 0, 25, 0 );
-  rLine( 0, 25, 0, 12 );
-  rLine( 0, 49, 0, 60 ); 
+  rLine( 0, 24, 0, 12 );
+  rLine( 0, 48, 0, 60 ); 
   rLine( 12, 72, 25, 72 );
   rLine( 0, 60, 12, 72 );
-  
-  rLine( 0, 37, -7, 37 );
-  
-  rLine( 0, 25, 12, 37 );
-  
-  rLine( 0, 49, 12, 37 );
-  
+  rLine( 0, 24, 6, 30 );
+  rLine( 0, 36, 6, 30 );
+  rLine( 0, 36, -7, 36 );
+  rLine( 0, 36, 6, 42 );
+  rLine( 0, 48, 6, 42 );
   translate( spacing-20, 0 );
 }
 
 void draw_CURLYBRACKETSR() {
-  
   translate( -20, 0 );
   rLine( 45, 60, 33, 72 );
   rLine( 20, 0, 33, 0 );
-  rLine( 45, 59, 45, 12 );
+  rLine( 45, 24, 45, 12 );
+  rLine( 45, 48, 45, 60 );
   rLine( 20, 72, 33, 72 );
   rLine( 45, 12, 33, 0 );
-  rLine( 45, 37, 52, 37 );
+  rLine( 45, 36, 52, 36 );
+  rLine( 39, 42, 45, 48 );
+  rLine( 39, 30, 45, 24 );
+  rLine( 39, 30, 45, 36 );
+  rLine( 39, 42, 45, 36 );
   translate( spacing, 0 );
 }
 
@@ -1107,24 +1111,24 @@ void draw_EQUALS() {
 }
 
 void draw_AT() {
-  rLine( 0, 22, 12, 10 );//20
-  rLine( 45, 55, 33, 67 );//5
-  rLine( 12, 10, 33, 10 );//20
-  rLine( 0, 55, 0, 22 );//20
-  rLine( 12, 67, 33, 67 );//5
-  rLine( 45, 22, 33, 10 );//20
-  rLine( 0, 55, 12, 67 );//5
-  rLine( 45, 22, 45, 45);//20
+  rLine( 0, 22, 12, 10 );
+  rLine( 45, 55, 33, 67 );
+  rLine( 12, 10, 33, 10 );
+  rLine( 0, 55, 0, 22 );
+  rLine( 12, 67, 33, 67 );
+  rLine( 45, 22, 33, 10 );
+  rLine( 0, 55, 12, 67 );
+  rLine( 45, 22, 45, 45);
   rLine( 6, 32, 18, 20 );
   rLine( 40, 42, 28, 54 );
   rLine( 18, 20, 28, 20 );
   rLine( 6, 42, 6, 32 ); 
-  rLine( 18, 54, 28, 54 );//4 32
+  rLine( 18, 54, 28, 54 );
   rLine( 40, 32, 28, 20 );
   rLine( 6, 42, 18, 54 );
   rLine( 40, 50, 40, 26 );
   rLine( 40, 50, 45, 45 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_POUND() {
@@ -1140,14 +1144,14 @@ void draw_MONEY() {
   rLine( 0, 18, 12, 30 );
   rLine( 0, 12, 0, 18 );
   rLine( 12, 0, 45, 0 );
-  rLine( 12, 30, 33, 30 );//midlacr
-  rLine( 45, 42, 33, 30); //midldow
-  rLine( 45, 42, 45, 60 );//mid ldowstr
-  rLine( 45, 60, 33, 72 );//lowldo
-  rLine( 33, 72, 0, 72 );//botl
+  rLine( 12, 30, 33, 30 );
+  rLine( 45, 42, 33, 30); 
+  rLine( 45, 42, 45, 60 );
+  rLine( 45, 60, 33, 72 );
+  rLine( 33, 72, 0, 72 );
   rLine( 15, -10, 15, 82 );
   rLine( 30, -10, 30, 82 );
-  translate(spacing, 0);
+  translate( spacing, 0 );
 }
 
 void draw_CARET() {
@@ -1202,7 +1206,15 @@ void draw_TILDE() {
   translate( spacing, 0 );
 }
 
+void draw_SQUAREBRACKETL() {
 
+
+}
+
+void draw_SQUAREBRACKETR() {
+
+
+}
 
 
 
